@@ -48,6 +48,10 @@ textarea {
     resize: vertical;
 }
 
+a {
+    text-decoration: none;
+}
+
 .chromeframe {
     margin: 0.2em 0;
     background: #ccc;
@@ -61,7 +65,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px 'Lato', sans-serif;
 }
 
 .wrapper {
@@ -69,28 +73,6 @@ body {
     margin: 0 5%;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-    border-bottom: 20px solid #e44d26;
-}
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
-}
-
-.title {
-    color: white;
-}
 
 /* ==============
     MOBILE: Menu
@@ -158,19 +140,6 @@ nav a:hover {
    ========================================================================== */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -216,12 +185,12 @@ nav a:hover {
     WIDE: CSS3 Effects
    ==================== */
 
-    .header-container,
+/*    .header-container,
     .main aside {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
-    }
+    }*/
 
 /* ============
     WIDE: Menu

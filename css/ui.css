@@ -1,0 +1,29 @@
+.btn {
+	padding: 5px 20px;
+	border-radius: 5px;
+	border: 1px solid #000;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #fff;
+	cursor: pointer;
+	-webkit-transition: background-color 0.3s ease, color 0.3s ease;
+	-moz-transition: background-color 0.3s ease, color 0.3s ease;
+	-ms-transition: background-color 0.3s ease, color 0.3s ease;
+	-o-transition: background-color 0.3s ease, color 0.3s ease;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.btn-invert {
+	background-color: #000;
+	color: #fff;
+}
+
+.btn-invert:hover {
+	background-color: #fff;
+	color: #000;
+}
