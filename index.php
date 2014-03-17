@@ -57,32 +57,32 @@
                                         Comunicação
                                     </div>
                                 </li>
-                                <li class="divisor"></li>
+                                <li class="divisor top"></li>
                                 <li class="planejamento">
                                     <div class="tooltip">
                                         Planejamento
                                     </div>
                                 </li>
-                                <li class="divisor"></li>
+                                <li class="divisor bottom"></li>
                                 <li class="design">
                                     <div class="tooltip">
                                         Design
                                     </div>
                                 </li>
-                                <li class="divisor"></li>
+                                <li class="divisor top"></li>
                                 <li class="dev">
                                     <div class="tooltip">
                                         Desenvolvimento
                                     </div>
                                 </li>
-                                <li class="divisor"></li>
+                                <li class="divisor bottom"></li>
                                 <li class="hospedagem">
                                     <div class="tooltip">
                                         Hospedagem
                                     </div>
                                 </li>
                             </ol>
-                            <a href="#portfolio" id="btn-port" class="btn ">PORTFOLIO</a>
+                            <a href="#portfolio" id="btn-port" class="btn btn-invert btn-border">PORTFOLIO</a>
                             <div id="like">
                                 <div class="fb-like" data-href="https://www.facebook.com/pages/Lucas-Cavalcanti/477009672397237" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
                             </div>

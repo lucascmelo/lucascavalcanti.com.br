@@ -23,6 +23,14 @@
 	color: #fff;
 }
 
+.btn-border {
+	border: 1px solid black;
+}
+
+.btn-invert.btn-border {
+	border-color: white;
+}
+
 .btn-invert:hover {
 	background-color: #fff;
 	color: #000;

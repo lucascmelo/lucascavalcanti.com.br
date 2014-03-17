@@ -1,1 +1,199 @@
-.lucas{margin-left:90px;margin-top:25px}a{color:black}.fr{float:right}.fl{float:left}#content{width:100%}#menu{width:0}.header-container{height:80px}.header-container .logotipo{position:fixed;top:10px;left:10px}.header-container #talk-to-me{margin-top:25px}.header-container .lang{width:23px;height:23px;margin:30px 5px;padding:0;font-size:14px;font-weight:700;border-radius:50%;float:left}.header-container #btn-menu{width:33px;height:33px;margin-top:25px;margin-right:10px;padding:0;border-radius:50%;float:left}.header-container #btn-menu .lines{width:20px;height:3px;display:block;margin:2px auto;background-color:#000;-webkit-transition:background-color .3s ease,color .3s ease;-moz-transition:background-color .3s ease,color .3s ease;-ms-transition:background-color .3s ease,color .3s ease;-o-transition:background-color .3s ease,color .3s ease;transition:background-color .3s ease,color .3s ease}.header-container #btn-menu .lines:first-child{margin-top:10px}.header-container #btn-menu:hover .lines{background-color:#fff}
+.lucas {
+  margin-left: 90px;
+  margin-top: 25px;
+}
+a {
+  color: black;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+#content {
+  width: 100%;
+}
+#menu {
+  width: 0;
+}
+.header-container {
+  height: 80px;
+}
+.header-container .logotipo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+.header-container #talk-to-me {
+  margin-top: 25px;
+}
+.header-container .lang {
+  width: 23px;
+  height: 23px;
+  margin: 30px 5px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50%;
+  float: left;
+}
+.header-container #btn-menu {
+  width: 33px;
+  height: 33px;
+  margin-top: 25px;
+  margin-right: 10px;
+  padding: 0;
+  border-radius: 50%;
+  float: left;
+}
+.header-container #btn-menu .lines {
+  width: 20px;
+  height: 3px;
+  display: block;
+  margin: 2px auto;
+  background-color: #000;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  -moz-transition: background-color 0.3s ease, color 0.3s ease;
+  -ms-transition: background-color 0.3s ease, color 0.3s ease;
+  -o-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.header-container #btn-menu .lines:first-child {
+  margin-top: 10px;
+}
+.header-container #btn-menu:hover .lines {
+  background-color: #fff;
+}
+#home {
+  height: 593px;
+  position: relative;
+  background: url(../img/banner-macbook-terminal.jpg) center center no-repeat;
+}
+#home #etapas {
+  margin-top: 190px;
+}
+#home #etapas li {
+  width: 101px;
+  height: 101px;
+  float: left;
+  position: relative;
+  list-style-type: none;
+  background: url(../img/sprite-banner.png) 0 0 no-repeat;
+}
+#home #etapas li.comunicacao {
+  background-position: 0 -444px;
+}
+#home #etapas li.comunicacao .tooltip {
+  margin-left: -52px;
+}
+#home #etapas li.planejamento {
+  background-position: 0 -333px;
+}
+#home #etapas li.planejamento .tooltip {
+  margin-left: -53px;
+}
+#home #etapas li.design {
+  background-position: 0 -222px;
+}
+#home #etapas li.design .tooltip {
+  margin-left: -29px;
+}
+#home #etapas li.dev {
+  background-position: 0 -111px;
+}
+#home #etapas li.dev .tooltip {
+  margin-left: -66px;
+}
+#home #etapas li.hospedagem .tooltip {
+  margin-left: -50.5px;
+}
+#home #etapas li .tooltip {
+  padding: 5px;
+  position: absolute;
+  top: -37px;
+  left: 50%;
+  display: none;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background: #fff;
+}
+#home #etapas li .tooltip::after {
+  content: "";
+  width: 18px;
+  height: 12px;
+  margin-left: -9px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  background: url(../img/sprite-banner.png) 0 -586px no-repeat;
+}
+#home #etapas li:hover .tooltip {
+  display: block;
+}
+#home #etapas li.divisor {
+  background-position: -999em -999em;
+}
+#home #etapas li.divisor::before {
+  width: 147px;
+  height: 80px;
+  content: "";
+  border-radius: 50%;
+  border: 3px dotted #fff;
+  border-left: none;
+  border-right: none;
+  position: absolute;
+  left: -20px;
+  top: 15px;
+}
+#home #etapas li.divisor::after {
+  width: 12px;
+  height: 21px;
+  content: "";
+  position: absolute;
+  left: 50%;
+  background: url(../img/sprite-banner.png) 0 -555px no-repeat;
+}
+#home #etapas li.divisor.top::before {
+  border-bottom: none;
+}
+#home #etapas li.divisor.top::after {
+  top: 5px;
+}
+#home #etapas li.divisor.bottom::before {
+  border-top: none;
+}
+#home #etapas li.divisor.bottom::after {
+  bottom: -5px;
+}
+#home #btn-port {
+  margin-left: -150px;
+  position: relative;
+  top: 160px;
+  left: 50%;
+  font-size: 36px;
+}
+#home #like {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#home #like .fb-like {
+  width: 120px;
+  margin: 7px auto;
+  display: block;
+}
+#home #like::after {
+  content: "";
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #777;
+  opacity: 0.2;
+}
