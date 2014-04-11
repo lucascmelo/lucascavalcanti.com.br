@@ -82,7 +82,7 @@
                                     </div>
                                 </li>
                             </ol>
-                            <a href="#portfolio" id="btn-port" class="btn btn-invert btn-border">PORTFOLIO</a>
+                            <a href="#!/portfolio" id="btn-port" class="btn btn-invert btn-border" title="Portfólio">PORTFÓLIO</a>
                             <div id="like">
                                 <div class="fb-like" data-href="https://www.facebook.com/pages/Lucas-Cavalcanti/477009672397237" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
                             </div>
@@ -92,19 +92,19 @@
                         <div class="main wrapper clearfix">
                             <ol id="list-infos">
                                 <li>
-                                    <figure></figure>
+                                    <figure class="fig-cartao">Cartão</figure>
                                     <h4>
-                                        Pague em até 18x no cartão, boleto ou débito automático pelo <a>pagseguro.
+                                        Pague em até 18x no cartão, boleto ou débito automático pelo <a href="">pagseguro.</a>
                                     </h4>
                                 </li>
                                 <li>
-                                    <figure></figure>
+                                    <figure class="fig-arroba">@</figure>
                                     <h4>
                                         Registre o domínio da sua empresa.
                                     </h4>
                                 </li>
                                 <li>
-                                    <figure></figure>
+                                    <figure class="fig-nuvem">Nuvem</figure>
                                     <h4>
                                         Hospede seu site com os melhores preços de acordo com sua necessidade.
                                     </h4>
@@ -133,7 +133,7 @@
                             </div>
                         </div>
                     </article>
-                    <article id="services">
+                    <article id="servicos">
                         <div class="main wrapper clearfix">
                             <ol id="list-services">
                                 <li>
@@ -271,21 +271,12 @@
                         <address>copyright &copy; 2014 - Lucas Cavalcanti</address>
                         <nav>
                             <ol>
-                                <li>
-                                    <a href="#!/home">HOME</a>
-                                </li>
-                                <li>
-                                    <a href="#!/sobre">SOBRE MIM</a>
-                                </li>
-                                <li>
-                                    <a href="#!/servicos">SERVIÇOS</a>
-                                </li>
-                                <li>
-                                    <a href="#!/palestras">PALESTRAS</a>
-                                </li>
-                                <li>
-                                    <a href="#!/fale">CONTATO</a>
-                                </li>
+                                <li><a href="#!/home" title="Home">HOME</a></li>
+                                <li><a href="#!/sobre" title="Sobre mim">SOBRE MIM</a></li>
+                                <li><a href="#!/servicos" title="Serviços">SERVIÇOS</a></li>
+                                <li><a href="#!/portfolio" title="Portfólio">Portfólio</a></li>
+                                <li><a href="#!/palestras" title="Palestras">PALESTRAS</a></li>
+                                <li><a href="#!/fale" title="Contato">CONTATO</a></li>
                             </ol>
                         </nav>
                     </footer>
@@ -294,11 +285,12 @@
             <aside id="menu" class="fl">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sobre mim</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Palestras</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#!/home" title="Home">HOME</a></li>
+                        <li><a href="#!/sobre" title="Sobre mim">SOBRE MIM</a></li>
+                        <li><a href="#!/servicos" title="Serviços">SERVIÇOS</a></li>
+                        <li><a href="#!/portfolio" title="Portfólio">Portfólio</a></li>
+                        <li><a href="#!/palestras" title="Palestras">PALESTRAS</a></li>
+                        <li><a href="#!/fale" title="Contato">CONTATO</a></li>
                     </ul>
                 </nav>
             </aside>

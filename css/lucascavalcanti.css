@@ -197,3 +197,31 @@ a {
   background-color: #777;
   opacity: 0.2;
 }
+#infos #list-infos li {
+  width: 33%;
+  float: left;
+  display: inline-block;
+}
+#infos #list-infos li figure,
+#infos #list-infos li h4 {
+  width: 250px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+#infos #list-infos li a {
+  color: #A6A6B7;
+}
+#infos #list-infos li figure {
+  width: 112px;
+  height: 125px;
+  background: url(../img/sprite-info.png) 0 0 no-repeat;
+  text-indent: -999em;
+}
+#infos #list-infos li .fig-cartao {
+  background-position: 0 -230px;
+}
+#infos #list-infos li .fig-nuvem {
+  background-position: 0 -115px;
+}
