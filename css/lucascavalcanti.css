@@ -1,3 +1,9 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 .lucas {
   margin-left: 90px;
   margin-top: 25px;
@@ -224,4 +230,114 @@ a {
 }
 #infos #list-infos li .fig-nuvem {
   background-position: 0 -115px;
+}
+#portfolio .main {
+  position: relative;
+}
+#portfolio .overflow,
+#portfolio #project-open {
+  max-width: 900px;
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+#portfolio .list-projects {
+  width: 999em;
+  height: 225px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+#portfolio .list-projects.top {
+  top: 0;
+}
+#portfolio .list-projects.bottom {
+  bottom: 0;
+}
+#portfolio .list-projects li {
+  max-width: 300px;
+  width: 33%;
+  margin-top: 12px;
+}
+#portfolio .list-projects li,
+#portfolio .list-projects a {
+  height: 200px;
+  float: left;
+  display: inline-block;
+}
+#portfolio .list-projects a {
+  width: 100%;
+  display: table;
+  position: relative;
+  text-align: center;
+  opacity: 0.4;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+#portfolio .list-projects a:hover {
+  opacity: 1;
+}
+#portfolio .list-projects a figure {
+  display: table-cell;
+  vertical-align: middle;
+}
+#portfolio .list-projects a h4 {
+  text-indent: -999em;
+  display: block;
+  display: none;
+}
+#portfolio.project-open {
+  background-color: #000;
+}
+#portfolio.project-open .overflow {
+  display: none;
+}
+#portfolio.list-open {
+  background-color: #fff;
+}
+#portfolio.list-open #project-open {
+  display: none;
+}
+#portfolio #nav-list-projects div {
+  width: 48px;
+  height: 80px;
+  margin-top: -40px;
+  position: absolute;
+  top: 50%;
+  background: url(../img/sprite-arrows.png) 0 0 no-repeat;
+  z-index: 10;
+  font-size: 60px;
+  text-indent: -999em;
+  cursor: pointer;
+}
+#portfolio #nav-list-projects .left {
+  left: 0;
+}
+#portfolio #nav-list-projects .right {
+  right: 0;
+}
+#portfolio.list-open #nav-list-projects .left:hover {
+  background-position: -81px 0;
+}
+#portfolio.list-open #nav-list-projects .right {
+  background-position: 0 -90px;
+}
+#portfolio.list-open #nav-list-projects .right:hover {
+  background-position: -81px -90px;
+}
+#portfolio.project-open #nav-list-projects .left {
+  background-position: 0 -180px;
+}
+#portfolio.project-open #nav-list-projects .left:hover {
+  background-position: -81px -180px;
+}
+#portfolio.project-open #nav-list-projects .right {
+  background-position: 0 -270px;
+}
+#portfolio.project-open #nav-list-projects .right:hover {
+  background-position: -81px -270px;
 }

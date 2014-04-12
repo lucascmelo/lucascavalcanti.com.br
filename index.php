@@ -112,22 +112,67 @@
                             </ol>
                         </div>
                     </article>
-                    <article id="portfolio">
+                    <article id="portfolio" class="project-open">
                         <div class="main wrapper clearfix">
-                            <ol id="list-projects">
-                                <li>
-                                    <a href="#claro">Claro</a>
-                                </li>
-                            </ol>
+                            <div class="overflow">
+                                <ol class="list-projects top">
+                                    <li>
+                                        <a href="#!/portfolio/#!/claro">
+                                            <figure>
+                                                <img src="portfolio/claro/logo-claro.jpg" >
+                                            </figure>
+                                            <h4>Claro</h4>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!/portfolio/#!/coca-cola">
+                                            <figure>
+                                                <img src="portfolio/coca/logo-coca-cola.jpg" >
+                                            </figure>
+                                            <h4>Coca-Cola</h4>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!/portfolio/#!/clight">
+                                            <figure>
+                                                <img src="portfolio/clight/logo-clight.jpg" >
+                                            </figure>
+                                            <h4>Clight</h4>
+                                        </a>
+                                    </li>
+                                </ol>
+                                <ol class="list-projects bottom">
+                                    <li>
+                                        <a href="#!/portfolio/#!/combomulti">
+                                            <figure>
+                                                <img src="portfolio/combomulti/logo-combomulti.jpg" >
+                                            </figure>
+                                            <h4>Combomulti - NET, Claro, Embratel</h4>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!/portfolio/#!/avianca">
+                                            <figure>
+                                                <img src="portfolio/aviancaemrevista/logo-aviancaemrevista.jpg" >
+                                            </figure>
+                                            <h4>Avianca em revistas</h4>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                            <nav id="nav-list-projects">
+                                <div class="left"><</div>
+                                <div class="right">></div>
+                            </nav>
                             <div id="project-open">
-                                <aside>
+                                <section class="fl">
                                     <h2>Claro</h2>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ullam impedit cupiditate asperiores qui numquam libero quam debitis iusto eius corrupti similique aut illum earum molestias reprehenderit autem excepturi possimus?
                                     </p>
-                                    <a href="#" class="btn btn-invert">Veja o Projeto</a>
-                                </aside>
-                                <section class="gallery">
+                                    <a href="#" class="btn btn-invert btn-border">Veja o Projeto</a>
+                                </section>
+                                <section class="gallery fr">
 
                                 </section>
                             </div>
