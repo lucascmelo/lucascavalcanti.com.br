@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/wzslider.css">
         <link rel="stylesheet" href="css/ui.css">
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -112,12 +113,12 @@
                             </ol>
                         </div>
                     </article>
-                    <article id="portfolio" class="project-open">
+                    <article id="portfolio" class="list-open">
                         <div class="main wrapper clearfix">
                             <div class="overflow">
                                 <ol class="list-projects top">
                                     <li>
-                                        <a href="#!/portfolio/#!/claro">
+                                        <a data-index="1" data-folder="portfolio/claro/claro.html" href="#!/portfolio/#!/claro">
                                             <figure>
                                                 <img src="portfolio/claro/logo-claro.jpg" >
                                             </figure>
@@ -125,7 +126,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#!/portfolio/#!/coca-cola">
+                                        <a data-index="2" data-folder="portfolio/coca/coca.html" href="#!/portfolio/#!/coca-cola">
                                             <figure>
                                                 <img src="portfolio/coca/logo-coca-cola.jpg" >
                                             </figure>
@@ -133,7 +134,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#!/portfolio/#!/clight">
+                                        <a data-index="3" href="#!/portfolio/#!/clight">
                                             <figure>
                                                 <img src="portfolio/clight/logo-clight.jpg" >
                                             </figure>
@@ -143,7 +144,7 @@
                                 </ol>
                                 <ol class="list-projects bottom">
                                     <li>
-                                        <a href="#!/portfolio/#!/combomulti">
+                                        <a  data-index="4" href="#!/portfolio/#!/combomulti">
                                             <figure>
                                                 <img src="portfolio/combomulti/logo-combomulti.jpg" >
                                             </figure>
@@ -151,7 +152,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#!/portfolio/#!/avianca">
+                                        <a  data-index="5" href="#!/portfolio/#!/avianca">
                                             <figure>
                                                 <img src="portfolio/aviancaemrevista/logo-aviancaemrevista.jpg" >
                                             </figure>
@@ -165,86 +166,192 @@
                                 <div class="right">></div>
                             </nav>
                             <div id="project-open">
-                                <section class="fl">
-                                    <h2>Claro</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ullam impedit cupiditate asperiores qui numquam libero quam debitis iusto eius corrupti similique aut illum earum molestias reprehenderit autem excepturi possimus?
-                                    </p>
-                                    <a href="#" class="btn btn-invert btn-border">Veja o Projeto</a>
-                                </section>
-                                <section class="gallery fr">
 
-                                </section>
                             </div>
                         </div>
                     </article>
-                    <article id="servicos">
+                    <article id="servicos" style="background: black">
                         <div class="main wrapper clearfix">
-                            <ol id="list-services">
+                            <ol id="list-services" style="display:none">
                                 <li>
                                    <a href="#!/servicos/#!/criacao-de-sites">
                                         <i class="icon icon-link"></i>
                                         <h3>Criação de Sites</h3>
-                                        <span>Saiba Mais</span>
+                                        <span class="btn">Saiba Mais</span>
                                    </a>
                                 </li>
                                 <li>
                                    <a href="#!/servicos/#!/blog">
                                         <i class="icon icon-wp"></i>
                                         <h3>Blog</h3>
-                                        <span>Saiba Mais</span>
+                                        <span class="btn">Saiba Mais</span>
                                    </a>
                                 </li>
                                 <li>
                                    <a href="#!/servicos/#!/sistemas-web">
                                         <i class="icon icon-system"></i>
                                         <h3>Sistemas Web</h3>
-                                        <span>Saiba Mais</span>
+                                        <span class="btn">Saiba Mais</span>
                                    </a>
                                 </li>
                                 <li>
                                    <a href="#!/servicos/#!/apps">
                                         <i class="icon icon-mobile"></i>
                                         <h3>Aplicativos</h3>
-                                        <span>Saiba Mais</span>
+                                        <span class="btn">Saiba Mais</span>
                                    </a>
                                 </li>
                                 <li>
                                    <a href="#!/servicos/#!/facebook">
                                         <i class="icon icon-face"></i>
                                         <h3>Facebook</h3>
-                                        <span>Saiba Mais</span>
+                                        <span class="btn">Saiba Mais</span>
                                    </a>
                                 </li>
                                 <li>
                                    <a href="#!/servicos/#!/loja">
                                         <i class="icon icon-cart"></i>
                                         <h3>Loja Virtual</h3>
-                                        <span>Saiba Mais</span>
+                                        <span class="btn">Saiba Mais</span>
                                    </a>
                                 </li>
                                 <li>
                                    <a href="#!/servicos/#!/email-marketing">
                                         <i class="icon icon-email"></i>
                                         <h3>Email Marketing</h3>
-                                        <span>Saiba Mais</span>
+                                        <span class="btn">Saiba Mais</span>
                                    </a>
                                 </li>
                                 <li>
                                    <a href="#!/servicos/#!/cursos">
                                         <i class="icon icon-monitor"></i>
                                         <h3>Cursos</h3>
-                                        <span>Saiba Mais</span>
+                                        <span class="btn">Saiba Mais</span>
                                    </a>
                                 </li>
                                 <li>
                                    <a href="#!/servicos/#!/hospedagem">
                                         <i class="icon icon-cloud"></i>
                                         <h3>Hospedagem</h3>
-                                        <span>Saiba Mais</span>
+                                        <span class="btn">Saiba Mais</span>
                                    </a>
                                 </li>
                             </ol>
+                            <div id="services-open">
+                                <nav id="nav-list-services">
+                                    <div class="left"><</div>
+                                    <div class="right">></div>
+                                </nav>
+                                <div id="criacao-de-sites">
+                                    <aside>
+                                        <h2>Criação de Sites</h2>
+                                        <div class="desc">
+                                            <p>Para você pessoa física ou jurídica que deseja colocar online para cerca de 105 milhões de internautas um site profissional informando o conteúdo que os seus clientes desejam encontrar. Apresento-lhes três categorias que cabem no seu bolso.</p>
+
+                                            <p><strong>Básico:</strong> Para projetos que necessitam de pouca informação, interatividade com os usuários e funcionalidade. Onde o seu objetivo é apenas informar endereço, telefone e um pouco da  sua empresa o site básico é o melhor custo benefício que se pode ter. Confira também aqui exemplos de modelos de site básico.</p>
+
+                                            <p><strong>Intermediário:</strong> Se você precisa de uma interação maior com o seu público alvo a melhor opção com certeza é a intermediária. Com mais funcionalidades você poderá gerenciar textos, imagens, videos, visualizar quantas usuários estão online em tempo real. Além de ter a opção de alguns modelos prontos, você poderá modificar/adicionar algumas funcionalidades no seu site. Confira também aqui exemplos de modelos de site intermediário.</p>
+
+                                            <p><strong>Personalizado:</strong> Caso você queira impressionar os seus clientes e dispor das tecnologias mais avançadas do momento o site personalizado lhe dará a possibilidade de criar junto comigo sites incríveis desfrutando de todas os benefícios. Confira também aqui exemplos de modelos de site personalizado.</p>
+
+                                            <div class="a-partir">
+                                                a partir de: <strong>R$ 800,00</strong> Pague em até 18x no cartão, boleto ou débito automático pelo <a href="#">pagseguro</a>.
+                                            </div>
+                                        </div>
+                                    </aside>
+                                    <section>
+                                        <table id="price">
+                                            <thead>
+                                                <th></th>
+                                                <th>Básico</th>
+                                                <th>Intermediário</th>
+                                                <th>Personalizado</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Valor</td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2 meses de hospedagem grátis</td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Páginas Institucccionais</td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Estastcíticas de acesso</td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Versão adaptada  para celulares e tablets</td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Formulário de contato</td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Otimizado para o Google (SEO)</td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Gerenciamento de Conteúdo</td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Modelos Prontos (Templates)</td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Layout Personalizado</td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td><span class="icon icon-check"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td><a href="#" class="">Exemplos</a></td>
+                                                    <td><a href="#" class="">Exemplos</a></td>
+                                                    <td><a href="#" class="">Exemplos</a></td>
+                                                </tr>
+                                                <tr class="contrate">
+                                                    <td></td>
+                                                    <td><a href="#" class="">Contrate</a></td>
+                                                    <td><a href="#" class="">Contrate</a></td>
+                                                    <td><a href="#" class="">Contrate</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </section>
+                                </div>
+                                <div id="blog"></div>
+                                <div id="sistemas-web"></div>
+                                <div id="apps"></div>
+                                <div id="facebook"></div>
+                                <div id="loja"></div>
+                                <div id="email-marketing"></div>
+                                <div id="hospedagem"></div>
+                            </div>
                         </div>
                     </article>
                     <article id="sobre">
