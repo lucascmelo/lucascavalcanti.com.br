@@ -17,11 +17,85 @@ a {
 .fl {
   float: left;
 }
+span.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  text-indent: -999em;
+  cursor: pointer;
+  opacity: 0.7;
+  background: url(../img/close.png) 0 0 no-repeat;
+}
+span.close:hover {
+  opacity: 1;
+}
 #content {
   width: 100%;
 }
 #menu {
   width: 0;
+  height: 100%;
+  position: fixed;
+  background: url(../img/bg-menu.png) 0 0 no-repeat;
+  top: 0;
+  right: 0;
+}
+#menu .btn-menu {
+  float: right;
+  position: relative;
+  display: none;
+  top: -80px;
+  margin-bottom: 10px;
+}
+#menu section {
+  padding-top: 10px;
+  width: 126px;
+}
+#menu section ul,
+#menu section ol {
+  padding: 0;
+  margin: 0;
+  padding-right: 10px;
+  float: right;
+}
+#menu section li {
+  list-style: none;
+}
+#menu section a {
+  color: #fff;
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+#menu section a.active {
+  color: #A6A6B7;
+}
+#menu section .social {
+  margin-top: 20px;
+}
+#menu section .social li,
+#menu section .social a {
+  float: left;
+  display: inline-block;
+}
+#menu section .social a {
+  width: 25px;
+  height: 25px;
+  margin-left: 4px;
+  background: url(../img/sprite-social.png) 0 0 no-repeat;
+}
+#menu section .social .github {
+  background-position: -27px 0;
+}
+#menu section .social .slideshare {
+  background-position: -54px 0;
+}
+#menu section .social .linkedin {
+  background-position: -81px 0;
 }
 .header-container {
   height: 80px;
@@ -30,6 +104,8 @@ a {
   position: fixed;
   top: 10px;
   left: 10px;
+  z-index: 10;
+  cursor: pointer;
 }
 .header-container #talk-to-me {
   margin-top: 25px;
@@ -44,7 +120,7 @@ a {
   border-radius: 50%;
   float: left;
 }
-.header-container #btn-menu {
+.btn-menu {
   width: 33px;
   height: 33px;
   margin-top: 25px;
@@ -53,7 +129,7 @@ a {
   border-radius: 50%;
   float: left;
 }
-.header-container #btn-menu .lines {
+.btn-menu .lines {
   width: 20px;
   height: 3px;
   display: block;
@@ -65,14 +141,12 @@ a {
   -o-transition: background-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-.header-container #btn-menu .lines:first-child {
+.btn-menu .lines:first-child {
   margin-top: 10px;
 }
-.header-container #btn-menu:hover .lines {
+.btn-menu:hover .lines,
+.btn-menu.active .lines {
   background-color: #fff;
-}
-#menu {
-  display: none;
 }
 #home {
   height: 593px;
@@ -234,6 +308,9 @@ a {
 #infos #list-infos li .fig-nuvem {
   background-position: 0 -115px;
 }
+#portfolio {
+  padding: 80px 0;
+}
 #portfolio .main {
   position: relative;
 }
@@ -352,21 +429,6 @@ a {
   display: none;
   color: #fff;
 }
-#portfolio #project-open .close {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 100;
-  text-indent: -999em;
-  cursor: pointer;
-  opacity: 0.7;
-  background: url(../img/close.png) 0 0 no-repeat;
-}
-#portfolio #project-open .close:hover {
-  opacity: 1;
-}
 #portfolio #project-open .desc a {
   color: #A6A6B7;
 }
@@ -385,6 +447,12 @@ a {
 }
 #portfolio #project-open .gallery .slides {
   visibility: hidden;
+}
+#servicos {
+  padding: 80px 0;
+}
+#servicos.services-open {
+  background-color: #000;
 }
 #servicos .main {
   position: relative;
@@ -494,6 +562,10 @@ a {
 #servicos #services-open {
   max-width: 900px;
   margin: 0 auto;
+  display: none;
+}
+#servicos #services-open > div {
+  display: none;
 }
 #servicos #services-open aside {
   width: 38%;
@@ -521,17 +593,21 @@ a {
   color: #fff;
   line-height: 16px;
 }
+#servicos #services-open section table .icon-check {
+  background: #ffffff url(../img/icon-check.png) center center no-repeat;
+}
 #servicos #services-open section table th {
   width: 139px;
   font-size: 16px;
   text-transform: uppercase;
+  padding-bottom: 5px;
 }
 #servicos #services-open section table th:first-child {
   width: 111px;
 }
 #servicos #services-open section table td {
-  height: 50px;
-  font-size: 14px;
+  height: 45px;
+  font-size: 12px;
   color: #000;
   border: 1px solid #000;
   border-top: none;
@@ -539,4 +615,162 @@ a {
 }
 #servicos #services-open section table td:first-child {
   text-align: center;
+  font-weight: 700;
+}
+#servicos #services-open section table .valor td {
+  font-size: 16px;
+  text-align: center;
+}
+#servicos #services-open section table .valor td span {
+  position: relative;
+  color: #444;
+  text-transform: uppercase;
+}
+#servicos #services-open section table .valor td .rs {
+  top: -10px;
+}
+#servicos #services-open section table .valor td .real {
+  font-size: 32px;
+  color: #FF7F00;
+  font-weight: 800;
+}
+#servicos #services-open section table .valor td h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #000;
+}
+#servicos #services-open section table .btn {
+  width: 80px;
+  margin: 0 auto;
+  padding: 5px;
+  display: block;
+  font-size: 11px;
+}
+#servicos #services-open section table .contrate .btn {
+  background-color: #206532;
+  border: none;
+  color: #fff;
+}
+#sobre {
+  padding: 60px 0 0px;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+}
+#sobre section {
+  width: 35%;
+  margin-right: 5%;
+  float: left;
+}
+#sobre section p:first-child {
+  margin-top: 20px;
+}
+#sobre aside {
+  width: 60%;
+  padding: 0;
+  float: left;
+}
+#sobre aside h2 {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 20px 0 0;
+  font-size: 16px;
+}
+#sobre aside ol {
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+  list-style: none;
+  float: left;
+}
+#sobre aside figure {
+  float: left;
+}
+#fale {
+  padding: 20px 0;
+  background-color: #000;
+}
+#fale fieldset {
+  max-width: 300px;
+  float: left;
+  font-size: 16px;
+}
+#fale fieldset legend {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#fale fieldset input,
+#fale fieldset textarea {
+  width: 280px;
+  padding: 10px 10px;
+  color: #fff;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  resize: none;
+  background-color: #000;
+}
+#fale fieldset textarea {
+  height: 80px;
+}
+#fale fieldset hr {
+  border-color: #fff;
+}
+#fale fieldset input[type=submit] {
+  width: 100%;
+  padding: 10px 0;
+}
+#fale aside {
+  width: auto;
+  float: left;
+  margin-left: 100px;
+}
+#fale aside a {
+  color: #A6A6B7;
+}
+.footer-container {
+  padding: 0 0 20px;
+}
+.footer-container address {
+  color: #000;
+  margin: 0;
+  font-style: normal;
+}
+.footer-container ol {
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+.footer-container ol li {
+  margin-left: 10px;
+  border-right: 1px solid #000;
+}
+.footer-container ol li:last-child {
+  border-right: 0;
+}
+.footer-container ol li,
+.footer-container ol a {
+  height: 25px;
+  color: #000;
+  font-size: 16px;
+  float: left;
+  display: inline-block;
+}
+.footer-container ol a {
+  padding-right: 10px;
+  text-transform: uppercase;
+}
+::-webkit-input-placeholder {
+  color: #fff;
+}
+:-moz-placeholder {
+  color: #fff;
+}
+::-moz-placeholder {
+  color: #fff;
+}
+:-ms-input-placeholder {
+  color: #fff;
 }

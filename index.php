@@ -41,7 +41,7 @@
                             <a id="talk-to-me" class="btn fl" href="#fale-comigo" data-translate="talk_to_me">Fale Comigo</a>
                             <div class="btn lang">PT</div>
                             <div class="btn lang">EN</div>
-                            <a id="btn-menu" href="#menu" class="btn">
+                            <a id="btn-menu" href="#menu" class="btn btn-menu">
                                 <div class="lines"></div>
                                 <div class="lines"></div>
                                 <div class="lines"></div>
@@ -170,9 +170,9 @@
                             </div>
                         </div>
                     </article>
-                    <article id="servicos" style="background: black">
+                    <article id="servicos">
                         <div class="main wrapper clearfix">
-                            <ol id="list-services" style="display:none">
+                            <ol id="list-services">
                                 <li>
                                    <a href="#!/servicos/#!/criacao-de-sites">
                                         <i class="icon icon-link"></i>
@@ -243,6 +243,7 @@
                                     <div class="right">></div>
                                 </nav>
                                 <div id="criacao-de-sites">
+                                    <span class="close"></span>
                                     <aside>
                                         <h2>Criação de Sites</h2>
                                         <div class="desc">
@@ -268,77 +269,87 @@
                                                 <th>Personalizado</th>
                                             </thead>
                                             <tbody>
-                                                <tr>
+                                                <tr class="valor">
                                                     <td>Valor</td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td>
+                                                        <span class="rs">R$</span>
+                                                        <span class="real">800</span>
+                                                        <span class="cents">,00</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="rs">R$</span>
+                                                        <span class="real">1.200</span>
+                                                        <span class="cents">,00</span>
+                                                    </td>
+                                                    <td>
+                                                        <h3>A Combinar</h3>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>2 meses de hospedagem grátis</td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td></td>
+                                                    <td class="icon icon-check"></td>
+                                                    <td class="icon icon-check"></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Páginas Institucccionais</td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td class="icon icon-check"></td>
+                                                    <td class="icon icon-check"></td>
+                                                    <td class="icon icon-check"></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Estastcíticas de acesso</td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td></td>
+                                                    <td class="icon icon-check"></td>
+                                                    <td class="icon icon-check"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Versão adaptada  para celulares e tablets</td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td>Versão adaptada para celulares e tablets</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="icon icon-check"></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Formulário de contato</td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td class="icon icon-check"></td>
+                                                    <td class="icon icon-check"></td>
+                                                    <td class="icon icon-check"></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Otimizado para o Google (SEO)</td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td class="icon icon-check"></td>
+                                                    <td class="icon icon-check"></td>
+                                                    <td class="icon icon-check"></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Gerenciamento de Conteúdo</td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td></td>
+                                                    <td class="icon icon-check"></td>
+                                                    <td class="icon icon-check"></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Modelos Prontos (Templates)</td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td class="icon icon-check"></td>
+                                                    <td class="icon icon-check"></td>
+                                                    <td class="icon icon-check"></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Layout Personalizado</td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
-                                                    <td><span class="icon icon-check"></span></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="icon icon-check"></td>
                                                 </tr>
                                                 <tr>
                                                     <td></td>
-                                                    <td><a href="#" class="">Exemplos</a></td>
-                                                    <td><a href="#" class="">Exemplos</a></td>
-                                                    <td><a href="#" class="">Exemplos</a></td>
+                                                    <td><a href="#" class="btn btn-example">Exemplos</a></td>
+                                                    <td><a href="#" class="btn btn-example">Exemplos</a></td>
+                                                    <td><a href="#" class="btn btn-example">Exemplos</a></td>
                                                 </tr>
                                                 <tr class="contrate">
                                                     <td></td>
-                                                    <td><a href="#" class="">Contrate</a></td>
-                                                    <td><a href="#" class="">Contrate</a></td>
-                                                    <td><a href="#" class="">Contrate</a></td>
+                                                    <td><a href="#" data-contrate="basico" class="btn">Contrate</a></td>
+                                                    <td><a href="#" data-contrate="intermediario" class="btn">Contrate</a></td>
+                                                    <td><a href="#" data-contrate="personalizado" class="btn">Contrate</a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -356,41 +367,54 @@
                     </article>
                     <article id="sobre">
                         <div class="main wrapper clearfix">
-                            <p>
-                                Lucas Cavalcanti, Recifense, 22 anos, Web Designer, Desenvolvedor Web, Programador, Front-End Engineering, Consultor Web e Instrutor.
-                                Trabalho com web desde 2010, com o foco nas especialidades do Front-End Engineer.
-                            </p>
-                            <p>
-                                Graduado em Sistemas para Internet pela Faculdade Marista.
-                            </p>
-                            <p>
-                                Sou também pesquisador e professor da Ciência Conscienciologia e um grande admirador e também pesquisador da Ciência Psicologia.
-                            </p>
-                            <p>
-                                Ocupo meu tempo com empreendimentos, voluntariado, freelancer e pesquisas.<br>Hoje trabalho como Web Designer freelancer disponibilizando meu tempo 100% aos meus atuais e futuros clientes.
-                            </p>
+                            <section>
+                                <p>
+                                    <?php
+                                      //date in mm/dd/yyyy format; or it can be in other formats as well
+                                        date_default_timezone_set('America/Araguaina');
+                                        $birthDate = "04/19/1991";
+                                        //explode the date to get month, day and year
+                                        $birthDate = explode("/", $birthDate);
+                                        //get age from date or birthdate
+                                        $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[0], $birthDate[1], $birthDate[2]))) > date("md") ? ((date("Y") - $birthDate[2]) - 1) : (date("Y") - $birthDate[2]));
+                                    ?>
+                                    Lucas Cavalcanti, Recifense, <span class="year"><?php echo $age; ?></span> anos, Web Designer, Desenvolvedor Web, Programador, Front-End Engineering, Consultor Web e Instrutor.
+                                    Trabalho com web desde 2010, com o foco nas especialidades do Front-End Engineer.
+                                </p>
+                                <p>
+                                    Graduado em Sistemas para Internet pela Faculdade Marista.
+                                </p>
+                                <p>
+                                    Sou também pesquisador e professor da Ciência Conscienciologia e um grande admirador e também pesquisador da Ciência Psicologia.
+                                </p>
+                                <p>
+                                    Ocupo meu tempo com empreendimentos, voluntariado, freelancer e pesquisas.<br>Hoje trabalho como Web Designer freelancer disponibilizando meu tempo 100% aos meus atuais e futuros clientes.
+                                </p>
+                            </section>
                             <aside>
-                                <h2>Conhecimentos</h2>
-                                <ol>
-                                    <li>HTML5</li>
-                                    <li>CSS, CSS3</li>
-                                    <li>Web Design</li>
-                                    <li>{LESS} / SASS</li>
-                                    <li>Javascript</li>
-                                    <li>jQuery</li>
-                                    <li>WordPress</li>
-                                </ol>
-                                <ol>
-                                    <li>SEO</li>
-                                    <li>Google Analytics</li>
-                                    <li>Facebook API</li>
-                                    <li>Responsive Layout</li>
-                                    <li>GIT</li>
-                                    <li>Mac OS X</li>
-                                    <li>Team Leadership</li>
-                                </ol>
+                                <div class="fl">
+                                    <h2>Conhecimentos</h2>
+                                    <ol>
+                                        <li>HTML5</li>
+                                        <li>CSS, CSS3</li>
+                                        <li>Web Design</li>
+                                        <li>{LESS} / SASS</li>
+                                        <li>Javascript</li>
+                                        <li>jQuery</li>
+                                        <li>WordPress</li>
+                                    </ol>
+                                    <ol>
+                                        <li>SEO</li>
+                                        <li>Google Analytics</li>
+                                        <li>Facebook API</li>
+                                        <li>Responsive Layout</li>
+                                        <li>GIT</li>
+                                        <li>Mac OS X</li>
+                                        <li>Team Leadership</li>
+                                    </ol>
+                                </div>
                                 <figure>
-                                    <img src="img/lucascavalcanti-fotos.png" alt="">
+                                    <img src="img/lucascavalcanti-fotos.jpg" alt="">
                                 </figure>
                             </aside>
                         </div>
@@ -420,22 +444,25 @@
                 </div> <!-- #main-container -->
                 <div class="footer-container">
                     <footer class="wrapper">
-                        <address>copyright &copy; 2014 - Lucas Cavalcanti</address>
-                        <nav>
-                            <ol>
-                                <li><a href="#!/home" title="Home">HOME</a></li>
-                                <li><a href="#!/sobre" title="Sobre mim">SOBRE MIM</a></li>
-                                <li><a href="#!/servicos" title="Serviços">SERVIÇOS</a></li>
-                                <li><a href="#!/portfolio" title="Portfólio">Portfólio</a></li>
-                                <li><a href="#!/palestras" title="Palestras">PALESTRAS</a></li>
-                                <li><a href="#!/fale" title="Contato">CONTATO</a></li>
-                            </ol>
-                        </nav>
+                        <address class="fl">copyright &copy; 2014 - Lucas Cavalcanti</address>
+                        <ol class="fl">
+                            <li><a href="#!/home" title="Home">HOME</a></li>
+                            <li><a href="#!/sobre" title="Sobre mim">SOBRE MIM</a></li>
+                            <li><a href="#!/servicos" title="Serviços">SERVIÇOS</a></li>
+                            <li><a href="#!/portfolio" title="Portfólio">Portfólio</a></li>
+                            <li><a href="#!/palestras" title="Palestras">PALESTRAS</a></li>
+                            <li><a href="#!/fale" title="Contato">CONTATO</a></li>
+                        </ol>
                     </footer>
                 </div>
             </section>
             <aside id="menu" class="fl">
-                <nav>
+                <a href="#menu" class="btn btn-menu">
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                </a>
+                <section>
                     <ul>
                         <li><a href="#!/home" title="Home">HOME</a></li>
                         <li><a href="#!/sobre" title="Sobre mim">SOBRE MIM</a></li>
@@ -444,7 +471,22 @@
                         <li><a href="#!/palestras" title="Palestras">PALESTRAS</a></li>
                         <li><a href="#!/fale" title="Contato">CONTATO</a></li>
                     </ul>
-                </nav>
+
+                    <ol class="social">
+                        <li>
+                            <a class="facebook" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="github" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="slideshare" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="linkedin" href="#"></a>
+                        </li>
+                    </ol>
+                </section>
             </aside>
         </div>
 

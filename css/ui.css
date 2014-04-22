@@ -13,7 +13,8 @@
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn:hover {
+.btn:hover,
+.btn.active {
 	background-color: #000;
 	color: #fff;
 }
@@ -31,7 +32,8 @@
 	border-color: white;
 }
 
-.btn-invert:hover {
+.btn-invert:hover,
+.btn-invert.active{
 	background-color: #fff;
 	color: #000;
 }
